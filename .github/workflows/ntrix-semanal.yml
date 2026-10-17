@@ -5,7 +5,7 @@ name: NTRIX - snapshot semanal
 
 on:
   schedule:
-    - cron: "30 11 * * 1"   # segunda-feira, 11:30 UTC (08:30 de Brasília)
+    - cron: "0 10 * * 1-5"   # dias úteis (seg–sex), 10:00 UTC (07:00 de Brasília)
   workflow_dispatch: {}      # botão "Run workflow" para rodar na hora
 
 permissions:
